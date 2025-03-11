@@ -1,13 +1,19 @@
-# RLforCodingandControl
-Simulations for Reinforcement Learning for Jointly Optimal Coding and Control Policies for a Controlled Markovian System over a Communication Channel
+# Introduction
+This repository contains simulations for the paper "Reinforcement Learning for Jointly Optimal Coding and Control Policies for a Controlled Markovian System over a Communication Channel." The goal is to develop and test reinforcement learning algorithms for optimizing coding and control policies in a controlled Markovian system.
 
-# File Organization
-├── predQuantQLearning/     # Q-learning using approximate finite quantized predictor space MDP approximation 
-│   ├── qLearning.py        # main for running Q_learning
-│   ├── qutils.py            # helper functions (cost function, piToIndex, quantizer, update pi)
-│   ├── getQuants.py        # get all quantizers
-│   ├── getEtas.py          # get all maps to action space
-│   ├── testPolicy.py       # test performance of converged policy
-│   ├── Results/            # file for results figures
-├── finiteWindowQLearning/  # Q-learning using approximate finite window predictor MDP 
-│   ├── qLearning.py        # main for running Q_learning
+# Requirements
+To run the simulations, you need the following dependencies:
+- Python 3.x
+- NumPy
+- Matplotlib
+
+# Results
+The results of the simulations are in the `Results/` directory.
+
+# File Organization (within `Code/` directory)
+├── Code/    
+│   ├── main.py        # main for running Q_learning
+│   ├── qLearning.py        # contains a class to implement a controlled Q-learning algorithm for reinforcement learning
+│   ├── qutils.py           # helper functions (including functions to check aperiodicity, irreducibility, dobrushin coefficient of kernel)
+│   ├── getQuants.py        # get list of quantization (coding) policies
+│   ├── getEtas.py          # get list of control policies

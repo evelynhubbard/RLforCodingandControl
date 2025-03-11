@@ -1,2 +1,8 @@
 venv_qLearning
 __pycache__/
+
+Results/*
+!Results/FW_n15_seed5.png
+!Results/QB_n15_seed7.png
+
+kernel.npy
